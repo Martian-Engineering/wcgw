@@ -19,7 +19,11 @@ from openai.types.chat import (
 )
 
 History = list[ChatCompletionMessageParam]
-Models = Literal["gpt-4o-2024-08-06", "gpt-4o-mini"]
+Models = Literal[
+    "mixtral-8x7b-32768",
+    "llama2-70b-4096",
+    "llama3-groq-70b-8192-tool-use-preview",
+]
 
 
 def discard_input() -> None:

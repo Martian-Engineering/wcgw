@@ -173,3 +173,14 @@ Then run
 `uvx --from wcgw@latest wcgw_local --claude`
 
 You can now directly write messages or press enter key to open vim for multiline message and text pasting.
+
+### Groq
+
+Add `GROQ_API_KEY` env variable.
+
+Then run
+
+`uvx --from wcgw@latest wcgw_local --groq`
+
+You can now directly write messages or press enter key to open vim for multiline message and text pasting.
+The default model is `mixtral-8x7b-32768`, but you can change it by setting the `GROQ_MODEL` environment variable to `llama2-70b-4096`.
